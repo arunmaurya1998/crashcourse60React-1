@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX and Babel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+
+      let root = document.getElementById("root");
+
+      function handleClick() {
+        // alert("Hello") show the alert tow way 1st use aleart and 2nd use confirm both are same work
+        confirm("world");
+      }
+
+      let ele = (
+        <React.Fragment>
+          <p>React is a javascript library</p>
+          <div className="main">
+            <p>Click the below button to alert 'Hello</p>
+            <button onClick={handleClick}>click me</button>
+          </div>
+        </React.Fragment>
+      );
+
+      let reactRoot = ReactDOM.createRoot(root);
+      reactRoot.render(ele);
+    </script>
+  </body>
+</html>
