@@ -1,0 +1,16 @@
+/* #main{
+    textAlign: "center",
+    width: "30%",
+    margin: "auto",
+    marginTop: "30px",
+    backgroundColor: "red",
+    bosShadow: " 2px 4px 4px 4px red",
+    borderRadius: "5px"
+  } */
+
+  #main{
+    text-align: center;
+    width: 30%;
+    box-shadow: 2px, 20px, 2px, 2px, rgb(232, 181, 181);
+    background-color: rgb(153, 225, 201);
+  }

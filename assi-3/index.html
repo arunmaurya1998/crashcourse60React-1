@@ -6,6 +6,7 @@
   </head>
   <body>
     <div id="root"></div>
+    
     <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -21,10 +22,22 @@
 
       let ele = (
         <React.Fragment>
-          <p>React is a javascript library</p>
-          <div className="main">
-            <p>Click the below button to alert 'Hello</p>
-            <button onClick={handleClick}>click me</button>
+          <div
+            style={{
+              textAlign: "center",
+              width: "30%",
+              margin: "auto",
+              marginTop: "30px",
+              backgroundColor: "rgb(153, 225, 201)",
+              bosShadow: " 4px 8px 8px 8px rgb(232, 181, 181)",
+              borderRadius: "5px"
+            }}
+          >
+            <p>React is a javascript library</p>
+            <div className="main">
+              <p>Click the below button to alert 'Hello</p>
+              <button onClick={handleClick}>click me</button>
+            </div>
           </div>
         </React.Fragment>
       );
